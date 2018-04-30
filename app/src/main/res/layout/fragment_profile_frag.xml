@@ -1,0 +1,237 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.constraint.ConstraintLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/changepicid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/userimage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/changepictextid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Profile Photo"
+        android:textAlignment="center"
+        android:textColor="#53aba2"
+        android:layout_marginTop="10dp"
+        app:layout_constraintVertical_bias="1.50"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintTop_toBottomOf="@+id/changepicid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="#000"
+        android:id="@+id/profileviewid"
+        app:layout_constraintTop_toBottomOf="@+id/changepictextid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtnameid"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:textColor="#53aba2"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/profileviewid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/etxtnameid"/>
+    <EditText
+        android:layout_width="0dp"
+        android:id="@+id/etxtnameid"
+        android:hint="Enter Name"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toBottomOf="@+id/profileviewid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/txtnameid"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="E-mail ID"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtemailid"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:textColor="#53aba2"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtnameid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/etxtemailid"/>
+    <EditText
+        android:layout_width="0dp"
+        android:id="@+id/etxtemailid"
+        android:hint="Enter E-mail ID"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@+id/txtnameid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/txtemailid"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_marginTop="15dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:id="@+id/txtgendid"
+        android:textAlignment="center"
+        android:textColor="#53aba2"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtemailid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/radiogroupid"/>
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogroupid"
+        android:layout_marginTop="15dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toBottomOf="@+id/txtemailid"
+        app:layout_constraintLeft_toRightOf="@+id/txtgendid"
+        app:layout_constraintRight_toRightOf="parent">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:buttonTint="#53aba2"
+            android:textColor="#53aba2"
+            android:textStyle="italic"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:buttonTint="#53aba2"
+            android:textColor="#53aba2"
+            android:textStyle="italic"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transgender"
+            android:buttonTint="#53aba2"
+            android:textColor="#53aba2"
+            android:textStyle="italic"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Phone Number "
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtnumid"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:textColor="#53aba2"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroupid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txtnumshowid"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+91-9812872873"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtnumshowid"
+        android:textAlignment="textStart"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:textColor="#53aba2"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroupid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/txtnumid"
+        android:gravity="start" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtaddid"
+        android:textAlignment="center"
+        android:textColor="#53aba2"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtnumid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/etxtstreetid"
+        android:hint="Street"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtaddid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/etxtcityid"
+        android:hint="City"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etxtstreetid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/etxtpincodeid"
+        android:hint="Pin code"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etxtcityid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/etxtstateid"
+        android:hint="State"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etxtpincodeid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/profileupbtnid"
+        app:layout_constraintTop_toBottomOf="@+id/etxtstateid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@mipmap/ic_launcher_round" />
+</android.support.constraint.ConstraintLayout>
+    </ScrollView>

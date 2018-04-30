@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dash"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Update Profile" />
+       <item
+            android:id="@+id/nav_sdaypost"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Post Sameday Jobs" />
+        <item
+            android:id="@+id/nav_bdaypost"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Post Booking Jobs" />
+        <item
+            android:id="@+id/nav_appliedjobs"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Applied Jobs" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Chat Room" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Give Feedback" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="logout" />
+        </menu>
+    </item>
+
+</menu>

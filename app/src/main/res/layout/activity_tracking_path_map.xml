@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amit.employeeapp.activities.TrackingPathMap">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/trackdistanceid"
+        android:text="Distance :"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/trackdurationid"
+        android:gravity="start" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/trackdurationid"
+        android:textSize="25sp"
+        android:text="Duration :"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/focusdriverbtnid"
+        app:layout_constraintLeft_toRightOf="@+id/trackdistanceid" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/focusdriverbtnid"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@mipmap/ic_launcher_round"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/trackmapid"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        app:layout_constraintTop_toBottomOf="@+id/trackdistanceid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/packconfbtnid"
+        android:background="@mipmap/ic_launcher_round"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.amit.employeeapp.activities.JobDescription">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorToolbar"
+        android:layout_height="wrap_content"
+        android:id="@+id/jdtoolbarid"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Job  "
+        android:textSize="20sp"
+        android:textColor="#368c81"
+        android:id="@+id/deletetxtid"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@+id/jdtoolbarid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:gravity="end" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/userimage"
+        android:id="@+id/slidderid"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/deletetxtid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Job Title"
+        android:textSize="30sp"
+        android:textColor="#080808"
+        android:id="@+id/jttxtid"
+        app:layout_constraintTop_toBottomOf="@+id/slidderid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Now"
+        android:textSize="20sp"
+        android:textColor="#0a1379"
+        android:id="@+id/ststxtid"
+        android:layout_margin="5dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@+id/jttxtid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/timetxtid"
+        android:gravity="start" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="09:00 AM- 05:30PM"
+        android:textSize="20sp"
+        android:textColor="#0a1379"
+        android:id="@+id/timetxtid"
+        android:layout_margin="5dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@+id/jttxtid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/ststxtid"
+        android:gravity="end" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SameDay Job"
+        android:textSize="20sp"
+        android:textColor="#0a1379"
+        android:layout_margin="5dp"
+        android:id="@+id/jtypetxtid"
+        android:textAlignment="textStart"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toBottomOf="@+id/timetxtid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/jamounttxtid"
+        android:gravity="start" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2000 Rs."
+        android:textSize="20sp"
+        android:textColor="#0e0e0e"
+        android:layout_margin="5dp"
+        android:id="@+id/jamounttxtid"
+        android:textAlignment="textEnd"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toBottomOf="@+id/timetxtid"
+        app:layout_constraintLeft_toRightOf="@+id/jtypetxtid"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="end" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Starting Info :"
+        android:textSize="20sp"
+        android:textColor="#0c0d0d"
+        android:id="@+id/sinfotxtid"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/jtypetxtid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+91-9812872873"
+        android:textSize="20sp"
+        android:textColor="#368c81"
+        android:id="@+id/originphtxtid"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/sinfotxtid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C-104,Near Harmony hospital,Phase 5 mohali, Punjab"
+        android:textSize="20sp"
+        android:textColor="#368c81"
+        android:id="@+id/originaddtxtid"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/originphtxtid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination Info :"
+        android:textSize="20sp"
+        android:textColor="#0c0d0d"
+        android:id="@+id/dinfotxtid"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/originaddtxtid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+91-9991589895"
+        android:textSize="20sp"
+        android:textColor="#368c81"
+        android:id="@+id/destphtxtid"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/dinfotxtid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C-104,Near Harmony hospital,Phase 5 mohali, Punjab"
+        android:textSize="20sp"
+        android:textColor="#368c81"
+        android:id="@+id/destaddtxtid"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/destphtxtid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

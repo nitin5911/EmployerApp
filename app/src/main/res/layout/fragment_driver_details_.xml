@@ -1,0 +1,86 @@
+  <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        tools:context="com.example.amit.employeeapp.activities.JobDescription">
+
+      <ImageView
+          android:id="@+id/dddriverimgid"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/userimage"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintBottom_toTopOf="@+id/ddnametxtid"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Driver Name"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#080808"
+            android:id="@+id/ddnametxtid"
+            app:layout_constraintTop_toBottomOf="@+id/dddriverimgid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textSize="20sp"
+            android:textColor="#0a1379"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ddchattxtid"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:textAlignment="textStart"
+            app:layout_constraintTop_toBottomOf="@+id/ddnametxtid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/ddtracktxtid"
+            android:gravity="start" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track Path"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#0a1379"
+            android:id="@+id/ddtracktxtid"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toBottomOf="@+id/ddnametxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ddchattxtid"
+            android:gravity="end" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+91-9812872873"
+            android:textSize="20sp"
+            android:textColor="#368c81"
+            android:id="@+id/ddphtxtid"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ddchattxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C-104,Near Harmony hospital,Phase 5 mohali, Punjab"
+            android:textSize="20sp"
+            android:textColor="#368c81"
+            android:id="@+id/ddaddtxtid"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ddphtxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+    </android.support.constraint.ConstraintLayout>

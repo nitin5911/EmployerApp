@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/backgroundtheme5"
+    tools:context="com.example.amit.employeeapp.outer_activities.NumberVerify">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phoneicon"
+        android:id="@+id/phoneiconid"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/otptextid"/>
+
+    <TextView
+        android:id="@+id/otptextid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/otptext"
+        android:textAlignment="center"
+        android:textColor="#0b504b"
+        android:fontFamily="cursive"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
+     <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/countryspinnerid"
+        app:layout_constraintTop_toBottomOf="@+id/otptextid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="@color/tintcolor"
+         android:textCursorDrawable="@color/tintcolor"
+         android:scrollbarSize="20dp"
+        android:textAlignment="textStart"
+         android:gravity="start"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etxtphonenoid"
+        android:hint="Enter Mobile Number"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toBottomOf="@+id/countryspinnerid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="@color/tintcolor"
+        android:textCursorDrawable="@color/tintcolor"
+        android:gravity="start"
+        android:textColorHint="@color/tintcolor"
+        android:textColor="@color/tintcolor"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendotpbtnid"
+        android:hint="SEND OTP"
+        android:layout_margin="5dp"
+        android:background="@drawable/roundbtnblue"
+        app:layout_constraintTop_toBottomOf="@+id/etxtphonenoid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

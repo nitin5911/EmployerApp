@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        android:id="@+id/sdjcardviewid"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sdjjobphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/userimage"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/sdjjobtitleid"/>
+            <TextView
+                android:id="@+id/sdjjobtitleid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job Title"
+                android:textColor="#b16b77"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/sdjjobphoto"
+                app:layout_constraintRight_toRightOf="parent" />
+            <TextView
+                android:id="@+id/sdjstarttimeid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9:45-11:00"
+                android:textColor="#b16b77"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintTop_toBottomOf="@+id/sdjjobtitleid"
+                app:layout_constraintLeft_toRightOf="@+id/sdjjobtitleid"
+                android:gravity="end" />
+
+            <TextView
+        android:id="@+id/sdjstartaddid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Address"
+        android:textColor="#53aba2"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/sdjstarttimeid"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/sdjendaddid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End Address"
+        android:textColor="#53aba2"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/sdjstartaddid"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

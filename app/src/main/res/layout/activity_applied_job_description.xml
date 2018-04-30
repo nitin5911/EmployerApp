@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        tools:context="com.example.amit.employeeapp.activities.JobDescription">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="@color/colorToolbar"
+            android:layout_height="wrap_content"
+            android:id="@+id/ajdtoolbarid"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete   "
+            android:textSize="20sp"
+            android:textColor="#b10614"
+            android:id="@+id/ajdcancletxtid"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toBottomOf="@+id/ajdtoolbarid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:gravity="end" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/userimage"
+            android:id="@+id/ajdslidderid"
+            android:layout_marginTop="7dp"
+            app:layout_constraintTop_toBottomOf="@+id/ajdcancletxtid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Title"
+            android:textSize="30sp"
+            android:textColor="#080808"
+            android:id="@+id/ajttxtid"
+            app:layout_constraintTop_toBottomOf="@+id/ajdslidderid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Applied"
+            android:textSize="20sp"
+            android:textColor="#0a1379"
+            android:id="@+id/ajststxtid"
+            android:layout_margin="5dp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:textAlignment="textStart"
+            app:layout_constraintTop_toBottomOf="@+id/ajttxtid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/ajtimetxtid"
+            android:gravity="start" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="09:00 AM- 05:30PM"
+            android:textSize="20sp"
+            android:textColor="#0a1379"
+            android:id="@+id/ajtimetxtid"
+            android:layout_margin="5dp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toBottomOf="@+id/ajttxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ajststxtid"
+            android:gravity="end" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SameDay Job"
+            android:textSize="20sp"
+            android:textColor="#0a1379"
+            android:layout_margin="5dp"
+            android:id="@+id/ajjtypetxtid"
+            android:textAlignment="textStart"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintTop_toBottomOf="@+id/ajtimetxtid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/ajamounttxtid"
+            android:gravity="start"  />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2000 Rs."
+            android:textSize="20sp"
+            android:textColor="#0e0e0e"
+            android:layout_margin="5dp"
+            android:id="@+id/ajamounttxtid"
+            android:textAlignment="textEnd"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintTop_toBottomOf="@+id/ajtimetxtid"
+            app:layout_constraintLeft_toRightOf="@+id/ajjtypetxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            android:gravity="end" />
+
+        <!--- Starting Info !-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Starting Info :"
+            android:textSize="20sp"
+            android:textColor="#0c0d0d"
+            android:id="@+id/ajsinfotxtid"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ajjtypetxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+91-9812872873"
+            android:textSize="20sp"
+            android:textColor="#368c81"
+            android:id="@+id/ajoriginphtxtid"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ajsinfotxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C-104,Near Harmony hospital,Phase 5 mohali, Punjab"
+            android:textSize="20sp"
+            android:textColor="#368c81"
+            android:id="@+id/ajoriginaddtxtid"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ajoriginphtxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+
+        <!-- Destination Info !-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destination Info :"
+            android:textSize="20sp"
+            android:textColor="#0c0d0d"
+            android:id="@+id/ajdinfotxtid"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ajoriginaddtxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+91-9991589895"
+            android:textSize="20sp"
+            android:textColor="#368c81"
+            android:id="@+id/ajdestphtxtid"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ajdinfotxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C-104,Near Harmony hospital,Phase 5 mohali, Punjab"
+            android:textSize="20sp"
+            android:textColor="#368c81"
+            android:id="@+id/ajdestaddtxtid"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ajdestphtxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+
+        <!---  Driver Details !-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Driver Info :"
+            android:textSize="20sp"
+            android:textColor="#0c0d0d"
+            android:id="@+id/ajdvrinfotxtid"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ajdestaddtxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ajdriverimgid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/userimage"
+            android:layout_marginTop="10dp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintTop_toBottomOf="@+id/ajdvrinfotxtid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/ajdnametxtid"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Driver Name"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#368c81"
+            android:id="@+id/ajdnametxtid"
+            app:layout_constraintTop_toBottomOf="@+id/ajdvrinfotxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ajdriverimgid"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textSize="20sp"
+            android:textColor="#0a1379"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ajdchattxtid"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:textAlignment="textStart"
+            app:layout_constraintTop_toBottomOf="@+id/ajdriverimgid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/ajdtracktxtid"
+            android:gravity="start" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track Path"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#0a1379"
+            android:id="@+id/ajdtracktxtid"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toBottomOf="@+id/ajdriverimgid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ajdchattxtid"
+            android:gravity="end" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+91-9812872873"
+            android:textSize="20sp"
+            android:textColor="#368c81"
+            android:id="@+id/ajdphtxtid"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ajdtracktxtid"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
